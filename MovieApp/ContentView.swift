@@ -24,7 +24,10 @@ struct ContentView: View {
 }
 
 struct Head: View {
+    @State var showSheet = false
+    
     var body: some View {
+        
         VStack(spacing: 15) {
             HStack {
                 VStack(alignment: .leading, spacing: 15) {
@@ -37,7 +40,7 @@ struct Head: View {
                         HStack(spacing: 10) {
                             Text("Mavel Studios Movies")
                                 .font(.system(size: 18, weight: .bold, design: .rounded))
-
+                            
                             Image(systemName: "chevron.down")
                                 .bold()
                         }
@@ -62,29 +65,45 @@ struct Head: View {
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(spacing: 15) {
-                        
+                        ForEach(datas) {i in
+                            ScrollView(.vertical, showsIndicators: false) {
+                                HStack(spacing: 15) {
+                                    ForEach(i.row) {j in
+                                        VStack(alignment: .leading, spacing: 10) {
+                                            Image(j.image)
+                                            Text(j.name)
+                                                .font(.system(size: 18, weight: .medium, design: .rounded))
+                                                .lineLimit(1)
+                                            Text(j.title)
+                                                .font(.system(size: 18, weight: .medium, design: .rounded))
+                                        }
+                                        .foregroundColor(.black.opacity(0.4))
+                                        .frame(width: 140)
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
+            .padding(.horizontal, 15)
         }
-        .padding()
     }
-}
-
-struct SearchView: View {
-    @State var textField = ""
     
-    var body: some View {
+    struct SearchView: View {
+        @State var textField = ""
         
-        HStack(spacing: 15) {
-            Image(systemName: "magnifyingglass")
-                .bold()
+        var body: some View {
             
-            TextField("Search movies...", text: $textField)
+            HStack(spacing: 15) {
+                Image(systemName: "magnifyingglass")
+                    .bold()
+                
+                TextField("Search movies...", text: $textField)
+            }
+            .padding()
+            .foregroundColor(.white)
+            .background(Color.gray.opacity(0.3))
+            .cornerRadius(20)
         }
-        .padding()
-        .foregroundColor(.white)
-        .background(Color.gray.opacity(0.3))
-        .cornerRadius(20)
     }
-}
