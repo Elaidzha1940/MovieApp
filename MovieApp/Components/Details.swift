@@ -71,7 +71,7 @@ struct Details: View {
                             }
                             .padding()
                         })
-                        .foregroundColor(self.selected == i.date ? Color.white : Color.gray)
+                        .foregroundColor(self.selected == i.date ? Color.black : Color.blue)
                         .background(self.selected == i.date ? Color.blue : Color.clear)
                         .cornerRadius(10)
                     }

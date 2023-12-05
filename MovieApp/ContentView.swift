@@ -64,6 +64,27 @@ struct Head: View {
             SearchView()
                 .padding(.vertical, 10)
             
+            HStack {
+                Text("All movies")
+                    .font(.system(size: 18, weight: .bold, design: .rounded))
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                }, label: {
+                    HStack {
+                        Text("Filter")
+                            .font(.system(size: 18, weight: .bold, design: .rounded))
+                        
+                        Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                            .renderingMode(.original)
+                    }
+                })
+                .foregroundColor(.white)
+            }
+            .padding(.bottom, 15)
+            
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(spacing: 15) {
                     ForEach(datas) { i in
