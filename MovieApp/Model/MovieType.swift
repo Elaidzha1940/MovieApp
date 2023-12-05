@@ -38,17 +38,22 @@ var datas = [
     MovieType(id: 0, row: [
         Row(id: 0, name: "Captian America", time: "1h 20m", image: "cap"),
         Row(id: 1, name: "Antman", time: "12h 10m", image: "ant"),
-        Row(id: 2, name: "Captian Marvel", time: "1h 50m", image: "marvel")
+        Row(id: 2, name: "Captian Marvel", time: "1h 50m", image: "marvel"),
+        Row(id: 3, name: "Guardians of the Galaxy", time: "1h 34m", image: "galaxy"),
+        Row(id: 4, name: "Spider-Man: Far From Home", time: "2h 58m", image: "spider"),
+        Row(id: 5, name: "Thor: Ragnarok", time: "1h 58m", image: "thor")
     ]),
     MovieType(id: 1, row: [
         Row(id: 0, name: "Altron", time: "2h 13m", image: "altron"),
         Row(id: 1, name: "Avangers", time: "1h 45m", image: "avangers"),
-        Row(id: 2, name: "Black Panther", time: "2h 43m", image: "blackp")
+        Row(id: 2, name: "Black Panther", time: "2h 43m", image: "blackp"),
+        Row(id: 3, name: "Captian America: Civil War", time: "3h 05m", image: "ironcap")
     ]),
     MovieType(id: 3, row: [
         Row(id: 0, name: "Black Window", time: "2h 13m", image: "blackwindow"),
         Row(id: 1, name: "Avangers Last Battle", time: "1h 45m", image: "avangerslast"),
-        Row(id: 2, name: "Galaxy", time: "2h 43m", image: "galaxy")
+        Row(id: 2, name: "Galaxy", time: "2h 43m", image: "galaxy"),
+        Row(id: 3, name: "Shang-Chi and the Legend of the Ten Rings", time: "1h 58m", image: "shang")
     ])
 ]
 
