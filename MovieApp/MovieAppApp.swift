@@ -1,9 +1,11 @@
+//  /*
 //
-//  MovieAppApp.swift
-//  MovieApp
+//  Project: MovieApp
+//  File: MovieAppApp.swift
+//  Created by: Elaidzha Shchukin
+//  Date: 04.12.2023
 //
-//  Created by Elaidzha Shchukin on 04.12.2023.
-//
+//  */
 
 import SwiftUI
 
