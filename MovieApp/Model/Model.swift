@@ -51,3 +51,11 @@ var datas = [
         Row(id: 2, name: "Galaxy", time: "2h 43m", image: "galaxy")
     ])
 ]
+
+var dates = [
+    DateType(id: 0, date: "8", day: "Mon"),
+    DateType(id: 1, date: "9", day: "Thu"),
+    DateType(id: 2, date: "10", day: "Wed"),
+    DateType(id: 3, date: "11", day: "Fri"),
+    DateType(id: 4, date: "12", day: "Tue")
+]
