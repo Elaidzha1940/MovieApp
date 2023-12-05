@@ -55,7 +55,36 @@ struct Head: View {
                         .foregroundColor(.white)
                 })
             }
+            
+            HStack {
+                SearchView()
+                    .padding(.vertical, 10)
+                
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 15) {
+                        
+                    }
+                }
+            }
         }
         .padding()
+    }
+}
+
+struct SearchView: View {
+    @State var textField = ""
+    
+    var body: some View {
+        
+        HStack(spacing: 15) {
+            Image(systemName: "magnifyingglass")
+                .bold()
+            
+            TextField("Search movies...", text: $textField)
+        }
+        .padding()
+        .foregroundColor(.white)
+        .background(Color.gray.opacity(0.3))
+        .cornerRadius(20)
     }
 }
