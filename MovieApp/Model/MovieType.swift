@@ -1,7 +1,7 @@
 //  /*
 //
 //  Project: MovieApp
-//  File: Model.swift
+//  File: MovieType.swift
 //  Created by: Elaidzha Shchukin
 //  Date: 05.12.2023
 //
@@ -59,3 +59,4 @@ var dates = [
     DateType(id: 3, date: "11", day: "Fri"),
     DateType(id: 4, date: "12", day: "Tue")
 ]
+

@@ -11,8 +11,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Head()
+        
+        NavigationView {
+            VStack {
+                Head()
+            }
         }
     }
 }
@@ -35,7 +38,7 @@ struct Head: View {
                         .font(.system(size: 20, weight: .bold, design: .rounded))
                     
                     Button(action: {
-                        // Добавьте код для действия кнопки
+                        // action
                     }, label: {
                         HStack(spacing: 10) {
                             Text("Marvel Studios Movies")
@@ -51,7 +54,7 @@ struct Head: View {
                 Spacer()
                 
                 Button(action: {
-                    // Добавьте код для действия кнопки
+                    // action
                 }, label: {
                     Image(systemName: "line.3.horizontal.circle")
                         .renderingMode(.original)
@@ -60,7 +63,6 @@ struct Head: View {
             }
             .padding(.top, 15)
             
-            // HStack {
             SearchView()
                 .padding(.vertical, 10)
             
@@ -71,13 +73,13 @@ struct Head: View {
                 Spacer()
                 
                 Button(action: {
-                    
+                    // action
                 }, label: {
                     HStack {
                         Text("Filter")
                             .font(.system(size: 18, weight: .bold, design: .rounded))
                         
-                        Image(systemName: "line.3.horizontal.decrease.circle.fill")
+                        Image(systemName: "line.3.horizontal.decrease.circle")
                             .renderingMode(.original)
                     }
                 })
@@ -96,14 +98,14 @@ struct Head: View {
                                             .resizable()
                                             .aspectRatio(contentMode: .fill)
                                             .frame(width: 120, height: 180)
-                                            .cornerRadius(10)
+                                            .cornerRadius(20)
                                             .onTapGesture {
                                                 self.showSheet.toggle()
                                             }
                                         Text(j.name)
                                             .font(.system(size: 18, weight: .medium, design: .rounded))
                                             .lineLimit(1)
-                                        Text(j.title)
+                                        Text(j.time)
                                             .font(.system(size: 18, weight: .medium, design: .rounded))
                                     }
                                     .foregroundColor(.black.opacity(0.4))

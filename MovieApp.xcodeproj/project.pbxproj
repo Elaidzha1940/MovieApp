@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E448C5C62B1EC86B00ABF8D3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448C5C52B1EC86B00ABF8D3 /* Model.swift */; };
+		E448C5C62B1EC86B00ABF8D3 /* MovieType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448C5C52B1EC86B00ABF8D3 /* MovieType.swift */; };
 		E448C5CB2B1ED3DF00ABF8D3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448C5CA2B1ED3DF00ABF8D3 /* SearchView.swift */; };
 		E448C5CE2B1EDDB800ABF8D3 /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = E448C5CD2B1EDDB800ABF8D3 /* Details.swift */; };
 		E497C4562B1D90E400AD9F1B /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E497C4552B1D90E400AD9F1B /* MovieAppApp.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E448C5C52B1EC86B00ABF8D3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E448C5C52B1EC86B00ABF8D3 /* MovieType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieType.swift; sourceTree = "<group>"; };
 		E448C5CA2B1ED3DF00ABF8D3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		E448C5CD2B1EDDB800ABF8D3 /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		E497C4522B1D90E400AD9F1B /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,7 +50,7 @@
 		E448C5CC2B1ED42200ABF8D3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E448C5C52B1EC86B00ABF8D3 /* Model.swift */,
+				E448C5C52B1EC86B00ABF8D3 /* MovieType.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 			files = (
 				E448C5CB2B1ED3DF00ABF8D3 /* SearchView.swift in Sources */,
 				E448C5CE2B1EDDB800ABF8D3 /* Details.swift in Sources */,
-				E448C5C62B1EC86B00ABF8D3 /* Model.swift in Sources */,
+				E448C5C62B1EC86B00ABF8D3 /* MovieType.swift in Sources */,
 				E497C4582B1D90E400AD9F1B /* ContentView.swift in Sources */,
 				E497C4562B1D90E400AD9F1B /* MovieAppApp.swift in Sources */,
 			);

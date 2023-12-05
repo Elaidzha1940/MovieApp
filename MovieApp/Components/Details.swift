@@ -14,16 +14,17 @@ struct Details: View {
     
     var body: some View {
         VStack {
-            Image(systemName: "")
+            Image("cap")
                 .resizable()
-                .aspectRatio(1, contentMode: .fill)
-                .frame(height: 350)
+                .aspectRatio(contentMode: .fill)
+                .cornerRadius(20)
+                .frame(height: 400)
             
             VStack {
-                VStack(spacing: 15) {
-                    Text("Captian")
-                        .font(.system(size: 18, weight: .semibold, design: .rounded))
-                        .foregroundStyle(.black)
+                VStack(spacing: 10) {
+                    Text("Captian America")
+                        .font(.system(size: 20, weight: .semibold, design: .rounded))
+                        .foregroundColor(.white)
                     
                     HStack(spacing: 15) {
                         HStack {
@@ -49,15 +50,14 @@ struct Details: View {
                     }
                     
                     Divider()
-                        .padding(.vertical, 15)
-                    // description
-                    Text("")
-                        .font(.system(size: 18, weight: .semibold, design: .rounded))
+                        .padding(.vertical, 10)
+                    
+                    Text("Captain America is a superhero created by Joe Simon and Jack Kirby who appears in American comic books published by Marvel Comics.")
+                        .font(.system(size: 15, weight: .semibold, design: .rounded))
                     
                 }
                 .padding()
-                .background(Color.gray.opacity(0.3))
-                .background(Color.black.opacity(0.5))
+                .background(Color.black.opacity(0.7))
                 .cornerRadius(20)
                 
                 HStack(spacing: 10) {
@@ -65,18 +65,18 @@ struct Details: View {
                         Button(action: {
                             self.selected = i.date
                         }, label: {
-                            VStack(spacing: 10) {
+                            VStack(spacing: 5) {
                                 Text(i.day)
                                 Text(i.date)
                             }
                             .padding()
                         })
-                        .foregroundColor(self.selected == i.date ? Color.black : Color.blue)
-                        .background(self.selected == i.date ? Color.blue : Color.clear)
-                        .cornerRadius(10)
+                        .foregroundColor(self.selected == i.date ? Color.black : Color.white)
+                        .background(self.selected == i.date ? Color.white : Color.clear)
+                        .cornerRadius(20)
                     }
                 }
-                .padding(.vertical, 25)
+                .padding(.vertical, 5)
                 
                 HStack(spacing: 15) {
                     Text("$25")
@@ -85,23 +85,24 @@ struct Details: View {
                         
                     }, label: {
                         Text("Book Now")
-                            .padding(.vertical, 15)
-                            .padding(.horizontal, 15)
+                            .padding(.vertical, 13)
+                            .padding(.horizontal, 14)
                     })
-                    .foregroundColor(.white)
-                    .background(Color.blue)
+                    .foregroundColor(.black)
+                    .background(Color.white)
                     .cornerRadius(20)
                 }
                 .padding(.top, 15)
                 
                 Spacer()
             }
-            .padding(.horizontal, 20)
-            .padding(.top, -30)
+            .padding(.horizontal, 10)
+            .padding(.top, 10)
         }
     }
 }
 
 #Preview {
     Details()
+        .preferredColorScheme(.dark)
 }
